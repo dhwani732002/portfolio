@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital.wght@0,100;0
+   ,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+   rel="styleshee">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font
+   -awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92
+   xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=
+   "anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/00fa4602c5.js" crossorigin="anonymous"></script>
+</head>
+  <style> *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+.hero{
+ height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg); 
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #0089f9;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px;
+}
+nav ul li a{
+    color: rgb(0, 141, 249);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize ;
+}
+nav ul li a:hover{
+    color: #000000;
+    transition: .4s;
+}
+.btn{
+    background-color: #0095f9;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px  25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: rgb(10, 10, 11);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: rgb(32, 2, 255);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: rgba(4, 0, 242, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #0089f9;
+    outline: none;
+    border-radius: 30px;
+} 
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #0089f9;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+} 
+.about{
+
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;   
+}
+.about-text h5{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+button{
+    background-color: #0089f9;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 2rem;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #0089f9;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    position: relative;
+    left: 2cm;   
+}
+.container img{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.con3 span{
+    border-bottom: 1px solid #0089f9;
+}
+.main img{
+    border-radius: 15rem;
+}
+
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 75px;
+    width: 993px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; 
+}
+.card i{
+    font:50px ;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #0089f9;
+}
+h5{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #0089f9;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #0089f9;
+    cursor: pointer;
+
+}
+.contact-me{
+        width: 100%;
+        height: 290px;
+        background: #191919;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center; 
+}
+.contact-me p{
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+.contact-me .button-two{
+    background-color: #0089f9;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #0089f9;
+    cursor: pointer;
+
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0089f9;
+    border-radius: 50%;
+    margin: 22PX 10PX;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #0089f9;
+    bottom: 40px;
+    font-size: 14px;
+}
+</style>
+
+<body>
+    <!--hero section start-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#main" >Home</a></li>
+                <li><a href="#about" >About Us</a></li>
+                <li><a href="#service" >Services</a></li>
+                <li><a href="#" >Skills</a></li>
+                <li><a href="#contact" >Contact US</a></li>
+            </ul>
+            
+            <a href="#subscribe" class="btn">Subscribe</a>
+        </nav>
+        
+        <div class="content">
+            <div class="con3">
+                <h4>Hello, my name is</h4>
+                <h1>Dhwani <span>Nathani</span></h1>
+                <h3>I am a Developer.</h3>
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                        <input type="submit" name="submit" value="Lets Start">
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+
+            </div>
+         </div>
+        
+    </div>
+  
+    
+    <!---About section start-->
+    <section class="about">
+        <div class="main" id="about">
+            <img src="./img/main-img.jpg" >
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Android<span> Developer</span></h5>
+                <p>The ideal candidate is a talented artist who has
+                    extensive technical expertise and can work independently or with a team to   create, maintain, 
+                    and update client websites in a variety of industries.
+                    Proficiency with Java and applications
+                    and services is essential for succeeding in this role.</p>
+                    
+                
+                    <button type="button">Let's Talk</button>
+                    
+            </div>
+        </div>
+    </section>
+    <!--Service section start-->
+    <div class="service" id="service">
+        <div class="title">
+        <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h5>IOT</h5>
+                <div class="pra">
+                    <p>Iot describes the network of physical
+                         objects that are embedded with sensors,
+                          software and other technologies for the purpose of
+                           connecting and exchanging data with other devices  over the internet.                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-brands fa-android"></i>
+                <h5>App Development</h5>
+                <div class="pra">
+                    <p>
+                        Application software is a computer program that performs a specific function,
+                         be it educational, personal, or business...
+                    </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h5> UI/UX</h5>
+                <div class="pra">
+                    <p>
+
+                        A UI, UX, and front-end web developer is responsible for applying interactive and visual design principles on websites and web applications for a positive and cohesive user experience. </p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact Me Section Start-->
+    <div class="contact-me" id="contact">
+        <p>Let me get you a Beautiful Application.</p>
+        <a class="button-two" href="#" >Hire Me</a>
+    </div>
+
+    <!--Footer start-->
+   <footer>
+    <p> Dhwani Nathani </p>
+    <p>For more Information about Android Development  please click the below link. </p>
+    <div class="social" id="subscribe">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p class="end">Copyright by dhwani</p>
+   </footer>
+</body>
+</html>
